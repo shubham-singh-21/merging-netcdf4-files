@@ -2,7 +2,7 @@ import pandas as pd
 import xarray as xr
 
 merged_variable = []
-file = open('filename.txt')#read the filename and filename must be in correctorde
+file = open('filename.txt')#read the filename and filename must be in correctorder
 for i in file:
   d1 = i.strip('\n')
   d = xr.open_dataset(d1)
